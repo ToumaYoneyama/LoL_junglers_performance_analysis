@@ -1,0 +1,6 @@
+title: Do Junglers Really Deserve the Blame?
+description: A data science investigation into League of Legends Jungler performance.
+theme: minima
+
+# Ensure index.md is treated as homepage
+markdown: kramdown
