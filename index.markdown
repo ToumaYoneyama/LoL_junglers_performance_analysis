@@ -71,7 +71,7 @@ Overall, features were either already well normalized or skewed.
 - Already Normalized Data:
 
 <iframe
- src="assets/cs_participation_histogram.html"
+ src="/LoL_junglers_performance_analysis/assets/cs_participation_histogram.html"
  width="800"
  height="600"
  frameborder="0"
@@ -82,7 +82,7 @@ Overall, features were either already well normalized or skewed.
 - Skewed Data:
 
 <iframe
- src="assets/damageshare_histogram.html"
+ src="/LoL_junglers_performance_analysis/assets/damageshare_histogram.html"
  width="800"
  height="600"
  frameborder="0"
@@ -97,7 +97,7 @@ For bivariate analysis, I looked at how objective control counts relate to win r
 - Team Dragons vs. Win Rate
 
 <iframe
- src="assets/team_dragons_vs_winrate.html"
+ src="/LoL_junglers_performance_analysis/assets/team_dragons_vs_winrate.html"
  width="800"
  height="600"
  frameborder="0"
@@ -108,7 +108,7 @@ For bivariate analysis, I looked at how objective control counts relate to win r
 - Team Barons vs. Win Rate
 
 <iframe
- src="assets/team_barons_vs_winrate.html"
+ src="/LoL_junglers_performance_analysis/assets/team_barons_vs_winrate.html"
  width="800"
  height="600"
  frameborder="0"
@@ -119,7 +119,7 @@ For bivariate analysis, I looked at how objective control counts relate to win r
 - Opp. Team Dragons vs. Win Rate
 
 <iframe
- src="assets/opp_team_dragons_vs_winrate.html"
+ src="/LoL_junglers_performance_analysis/assets/opp_team_dragons_vs_winrate.html"
  width="800"
  height="600"
  frameborder="0"
@@ -128,7 +128,7 @@ For bivariate analysis, I looked at how objective control counts relate to win r
 ### Interesting Aggregations
 An interesting aggregation is by patch and champion. This lets us observe how Jungler performance varies across different champions and across changing environments (patch versions).
 
-<iframe src="assets/agg_patch_champion.html" width="800" height="400" frameborder="0">
+<iframe src="/LoL_junglers_performance_analysis/assets/agg_patch_champion.html" width="800" height="400" frameborder="0">
 </iframe>
 
 **Significance**: This aggregation helps contextualize Jungler performance. If certain champions or patches lead to systematically better or worse stats, it suggests that win/loss outcomes may be influenced as much by the meta as by the individual player. In other words, Junglers might be blamed for poor outcomes that were more about champion viability or patch balance than their own decisions.
@@ -245,15 +245,15 @@ Below are the confusion matrices for each final model, showing how often predict
 
 - **Logistic Regression**
 
-<iframe src="/assets/confusion_matrix_logisticregression.html" width="600" height="500" frameborder="0"></iframe>
+<iframe src="/LoL_junglers_performance_analysis/assets/confusion_matrix_logisticregression.html" width="600" height="500" frameborder="0"></iframe>
 
 - **Random Forest**
 
-<iframe src="/assets/confusion_matrix_randomforest.html" width="600" height="500" frameborder="0"></iframe>
+<iframe src="/LoL_junglers_performance_analysis/assets/confusion_matrix_randomforest.html" width="600" height="500" frameborder="0"></iframe>
 
 - **Support Vector Classifier (SVC)**
 
-<iframe src="/assets/confusion_matrix_svc.html" width="600" height="500" frameborder="0"></iframe>
+<iframe src="/LoL_junglers_performance_analysis/assets/confusion_matrix_svc.html" width="600" height="500" frameborder="0"></iframe>
 
 ### Interpretation
 All three models performed significantly better than the original baseline, with SVC achieving the highest accuracy. These results show that **Jungler performance, when properly contextualized with team objectives and transformed for skew, is highly predictive of match outcome**. In this dataset, Jungler-related stats were enough to predict wins and losses with nearly 99% accuracy — suggesting that the role's impact is not just perception, but measurable.
